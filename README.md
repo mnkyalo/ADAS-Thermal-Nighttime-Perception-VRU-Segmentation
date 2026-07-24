@@ -43,7 +43,7 @@ The goal of this project was to perform high-precision, pixel-level **Instance S
 CVAT workspace demonstrating pixel-accurate instance segmentation on night-vision LWIR thermal data. High-risk VRUs—a cyclist (left) and skateboarder (right)—are delineated using precise polygons to isolate complex body contours and wheel geometries from background thermal noise.
 
 <p align="center">
-  <img src="./assets/figure1_vru_segmentation.png" alt="VRU Thermal Instance Segmentation" width="850"/>
+  <img src="./assets/CVAT-ADAS_Thermal_Perception_Fig_1.png" alt="VRU Thermal Instance Segmentation" width="850"/>
 </p>
 
 *Selected Attributes:* `Pose: On a device` | `Device: Bicycle` | `Occlusion: False`
@@ -54,7 +54,7 @@ CVAT workspace demonstrating pixel-accurate instance segmentation on night-visio
 Demonstration of multi-class instance segmentation on nighttime FLIR data. A foreground pedestrian (`Pose: Walking`) positioned beside an RV/trailer is segmented alongside background vehicles using Z-index alignment to prevent label overlap.
 
 <p align="center">
-  <img src="./assets/figure2_pedestrian_trailer.png" alt="Pedestrian Thermal Instance Segmentation" width="850"/>
+  <img src="./assets/CVAT-ADAS_Thermal_Perception_Fig_2.png" alt="Pedestrian Thermal Instance Segmentation" width="850"/>
 </p>
 
 *Selected Attributes:* `Pose: Walking` | `Device: None` | `Type: Trailer`
@@ -65,7 +65,7 @@ Demonstration of multi-class instance segmentation on nighttime FLIR data. A for
 CVAT workspace illustrating separate polygon masks for structural walls, sidewalk curb borders (`Navigable_Boundary`), and active streetlight posts (`Active_Heat_Source`). This allows ADAS vision stacks to distinguish artificial heat sources from navigable roadways.
 
 <p align="center">
-  <img src="./assets/figure3_infrastructure_lwir.png" alt="Infrastructure Thermal Instance Segmentation" width="850"/>
+  <img src="./assets/CVAT-ADAS_Thermal_Perception_Fig_3.png" alt="Infrastructure Thermal Instance Segmentation" width="850"/>
 </p>
 
 *Selected Attributes:* `Type: Street_Lamp` | `Thermal State: Active_Heat_Source` | `Functionality: Illumination`
