@@ -1,3 +1,20 @@
+# ADAS Thermal Nighttime Perception & VRU Segmentation
+
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=flat&logo=github)](https://github.com/mnkyalo/ADAS-Thermal-Nighttime-Perception-VRU-Segmentation)
+[![Format](https://img.shields.io/badge/Data_Format-COCO_Instances-blue)](#)
+[![Domain](https://img.shields.io/badge/Domain-Autonomous_Vehicles_%2F_ADAS-green)](#)
+
+## Overview
+This repository contains specialized data annotations, schemas, and evaluation protocols tailored for **Vulnerable Road User (VRU)** detection and thermal scene understanding in low-light and nighttime driving conditions. 
+
+### Key Features & Dataset Metadata
+* **Standard Specification:** Extended COCO 1.0 JSON schema with custom fine-grained attributes (`Pose`, `Thermal_State`, `Proximity`, `Occlusion`).
+* **Core Classes:** `Pedestrian`, `Vehicle`, `Infrastructure`.
+* **Primary Objective:** High-precision bounding box and semantic segmentation masks for zero-visibility ADAS perception models.
+
+
+
+
 # 🚘 ADAS Thermal Nighttime Perception: VRU Instance Segmentation
 
 **Evaluator:** Margaret Kyalo  
