@@ -1,1 +1,78 @@
-
+{
+  "project_name": "ADAS Thermal Nighttime Perception VRU Instance Segmentation",
+  "domain": "Automotive Vision & Autonomous Driving (LWIR Thermal)",
+  "version": "1.0.0",
+  "classes": [
+    {
+      "name": "Pedestrian",
+      "color": "#00FF00",
+      "type": "polygon",
+      "description": "Dynamic human targets showing high thermal intensity (light gray / white contours). Includes VRUs operating micro-mobility devices.",
+      "attributes": [
+        {
+          "name": "Pose",
+          "input_type": "select",
+          "values": ["Standing", "Walking", "Bending", "Sitting", "On a device"],
+          "default": "Standing"
+        },
+        {
+          "name": "Occlusion",
+          "input_type": "checkbox",
+          "default": false
+        },
+        {
+          "name": "Device",
+          "input_type": "select",
+          "values": ["Bicycle", "Skateboard", "Scooter", "None"],
+          "default": "None"
+        }
+      ]
+    },
+    {
+      "name": "Vehicle",
+      "color": "#00FFFF",
+      "type": "polygon_and_bbox",
+      "description": "Rigid motorized bodies, heated wheel wells, exhaust systems, parked cars, and trailers.",
+      "attributes": [
+        {
+          "name": "Type",
+          "input_type": "select",
+          "values": ["Sedan", "SUV", "Trailer", "Truck"],
+          "default": "Sedan"
+        },
+        {
+          "name": "Proximity",
+          "input_type": "select",
+          "values": ["Foreground", "Background"],
+          "default": "Foreground"
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure",
+      "color": "#A020F0",
+      "type": "polygon",
+      "description": "Static background elements, structural walls, lighting posts, and road borders.",
+      "attributes": [
+        {
+          "name": "Type",
+          "input_type": "select",
+          "values": ["Building_Structure", "Street_Lamp", "Signage", "Bollard_Post", "Curb_Border"],
+          "default": "Building_Structure"
+        },
+        {
+          "name": "Thermal_State",
+          "input_type": "select",
+          "values": ["Active_Heat_Source", "Ambient_Cold"],
+          "default": "Ambient_Cold"
+        },
+        {
+          "name": "Functionality",
+          "input_type": "select",
+          "values": ["Navigable_Boundary", "Physical_Obstacle", "Illumination"],
+          "default": "Physical_Obstacle"
+        }
+      ]
+    }
+  ]
+}
