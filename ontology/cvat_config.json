@@ -1,0 +1,76 @@
+[
+  {
+    "name": "Pedestrian",
+    "color": "#00ff00",
+    "attributes": [
+      {
+        "name": "Pose",
+        "input_type": "select",
+        "mutable": false,
+        "values": ["Standing", "Walking", "Bending", "Sitting", "On a device"],
+        "default_value": "Standing"
+      },
+      {
+        "name": "Occlusion",
+        "input_type": "checkbox",
+        "mutable": false,
+        "values": ["false"],
+        "default_value": "false"
+      },
+      {
+        "name": "Device",
+        "input_type": "select",
+        "mutable": false,
+        "values": ["Bicycle", "Skateboard", "Scooter", "None"],
+        "default_value": "None"
+      }
+    ]
+  },
+  {
+    "name": "Vehicle",
+    "color": "#00ffff",
+    "attributes": [
+      {
+        "name": "Type",
+        "input_type": "select",
+        "mutable": false,
+        "values": ["Sedan", "SUV", "Trailer", "Truck"],
+        "default_value": "Sedan"
+      },
+      {
+        "name": "Proximity",
+        "input_type": "select",
+        "mutable": false,
+        "values": ["Foreground", "Background"],
+        "default_value": "Foreground"
+      }
+    ]
+  },
+  {
+    "name": "Infrastructure",
+    "color": "#a020f0",
+    "attributes": [
+      {
+        "name": "Type",
+        "input_type": "select",
+        "mutable": false,
+        "values": ["Building_Structure", "Street_Lamp", "Signage", "Bollard_Post", "Curb_Border"],
+        "default_value": "Building_Structure"
+      },
+      {
+        "name": "Thermal_State",
+        "input_type": "select",
+        "mutable": false,
+        "values": ["Active_Heat_Source", "Ambient_Cold"],
+        "default_value": "Ambient_Cold"
+      },
+      {
+        "name": "Functionality",
+        "input_type": "select",
+        "mutable": false,
+        "values": ["Navigable_Boundary", "Physical_Obstacle", "Illumination"],
+        "default_value": "Physical_Obstacle"
+      }
+    ]
+  }
+]
